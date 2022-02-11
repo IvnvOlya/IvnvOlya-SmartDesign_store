@@ -2,17 +2,17 @@
 
 Build Setup
 1. В терминале запускаем MongoDB
-% mongo --host 127.0.0.1:27017
-Посмотреть данные в DB можно с помощью команд
->show dbs
-> use blog
-> db.posts.find()
+2. % mongo --host 127.0.0.1:27017
+3. Посмотреть данные в DB можно с помощью команд
+4. >show dbs
+5. > use blog
+6. > db.posts.find()
 
-2.В другом терминале запускаем Сервер (backend) из проекта
-% cd backend
-% yarn build-start
+7. В другом терминале запускаем Сервер (backend) из проекта
+8. % cd backend
+9. % yarn build-start
 
-3.В другом терминале запускаем наше приложение React (my-app) из проекта
-% cd my-app
-% npm install
-% npm start  
+10. В другом терминале запускаем наше приложение React (my-app) из проекта
+11. % cd my-app
+12. % npm install
+13. % npm start  
