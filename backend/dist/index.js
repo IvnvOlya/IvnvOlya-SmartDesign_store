@@ -25,7 +25,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Post = new _PostController2.default();
 
 var app = (0, _express2.default)();
-_mongoose2.default.connect("mongodb://localhost/blog", {
+_mongoose2.default.connect("mongodb://localhost/store", {
   useNewUrlParser: true
 });
 
@@ -35,9 +35,9 @@ app.use((0, _cors2.default)());
 
 app.get("/posts", Post.index);
 app.post("/posts", Post.create);
-app.get("/posts/:id", Post.read);
-app.delete("/posts/:id", Post.delete);
-app.patch("/posts/:id", Post.update);
+// app.get("/posts/:id", Post.read);
+// app.delete("/posts/:id", Post.delete);
+// app.patch("/posts/:id", Post.update);
 
 app.listen(3333, function () {
   console.log("SERVER STARTED!");

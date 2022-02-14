@@ -5,9 +5,10 @@ class PostController {
     PostModel.find().then((err, posts) => {
       if (err) {
         res.send(err);
+        return
       }
-
       res.json(posts);
+      return
     });
   }
 
@@ -21,6 +22,7 @@ class PostController {
 
     post.save().then(() => {
       res.json(data.title);
+      return
     });
   }
 

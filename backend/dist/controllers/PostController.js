@@ -25,9 +25,10 @@ var PostController = function () {
       _Post2.default.find().then(function (err, posts) {
         if (err) {
           res.send(err);
+          return;
         }
-
         res.json(posts);
+        return;
       });
     }
   }, {
@@ -42,6 +43,7 @@ var PostController = function () {
 
       post.save().then(function () {
         res.json(data.title);
+        return;
       });
     }
   }, {
