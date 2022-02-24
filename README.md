@@ -1,4 +1,4 @@
-# IvnvOlya-SmartDesign_store
+# IvnvOlya-test-form
 
 Build Setup
 1. В терминале запускаем MongoDB
